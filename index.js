@@ -42,3 +42,30 @@ console.log("Objeto de refresco:", refresco)
 refresco["competidor"] = "Pepsi"
 
 console.log (refresco)
+
+// C. PROPIEDADES Y CICLOS
+
+// OBJECT.KEYS()
+// Metodo que permite convertir las propiedades de un objeto en propiedades de un arreglo.
+
+const arrRefresco = Object.keys(refresco)
+
+console.log(arrRefresco)
+
+// for ... in
+
+// for (VARIABLE KEY in OBJECT)
+for (let key in refresco) {
+    // console.log(`La propiedad es: ${key}`)
+    // if (key === "competidor") console.log("Encontre la prop competidor")
+    console.log(`La propiedad es ${key} y su valor es ${refresco[key]}`)
+}
+
+// OBJECT.VALUES()
+// Metodo que permite convertir los valores de un objeto en elementos de un arreglo.
+
+const arrRefrescoValores = Object.values(refresco)
+
+console.log("arrRefrescoValores",arrRefrescoValores)
+
+// ARREGLOS CON OBJETOS
