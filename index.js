@@ -32,7 +32,7 @@ const refresco = {
     nombre: "Coca cola",
     color: "Oscuro",
     precio: 12,
-    tamanos: [600,1000]
+    tamanos: [600, 1000]
 }
 
 refresco.envase = "Plastico"
@@ -41,7 +41,7 @@ console.log("Objeto de refresco:", refresco)
 
 refresco["competidor"] = "Pepsi"
 
-console.log (refresco)
+console.log(refresco)
 
 // C. PROPIEDADES Y CICLOS
 
@@ -66,6 +66,91 @@ for (let key in refresco) {
 
 const arrRefrescoValores = Object.values(refresco)
 
-console.log("arrRefrescoValores",arrRefrescoValores)
+console.log("arrRefrescoValores", arrRefrescoValores)
 
 // ARREGLOS CON OBJETOS
+//                    0   1    2
+const arrNumbers = [5873, 4687, 500]
+
+console.log(arrNumbers[0])
+console.log(arrNumbers[1])
+console.log(arrNumbers[2])
+
+const mike = [
+    {
+        name: "Mike",
+        age: 34
+    }
+]
+
+console.log(mike[0].age) // =>34
+
+let estudiantesIH = [
+    {
+        name: "Leo",
+        location: "Queretaro",
+        weather: "frijolito"
+    },
+    {
+        name: "Joaquin",
+        location: "Hidalgo",
+        weather: "Frijolito duro"
+    },
+    {
+        name: "Alan",
+        location: "Atizapan",
+        weather: "Frijolito poquito"
+    },
+    {
+        name: "Alexis",
+        location: "Aguascalientes",
+        weather: "Frijolito poquito"
+    }
+]
+
+console.log(estudiantesIH[2].location) // => "Atizapan"
+
+// JS TRADICIONAL - ES5
+
+estudiantesIH.push({
+    name: "Emmanuel",
+    location: "CDMX",
+    weather: "Calorcito"
+})
+
+console.log(estudiantesIH)
+
+// JS TRADICIONAL - ES6
+
+estudiantesIH = [
+    ...estudiantesIH, // SPREAD OPERATOR - Pasar todos los elementos de arreglo indicado
+    {
+        name: "Roman",
+        location: "CDMX",
+        weather: "Calorcito"
+    }
+]
+
+console.log(estudiantesIH)
+
+const deportesDeEquipo = [
+    {
+        nombre: "Basquetbol",
+        jugadores: 5,
+        cancha: "duela",
+    },
+    {
+        nombre: "Soccer 7",
+        jugadores: 7,
+        cancha: "pasto",
+    },
+    {
+        nombre: "Voleibol",
+        jugadores: 6,
+        cancha: "duela",
+    },
+]
+
+console.log(deportesDeEquipo[0].cancha)
+console.log(deportesDeEquipo[1].jugadores)
+console.log(deportesDeEquipo[2].nombre)
